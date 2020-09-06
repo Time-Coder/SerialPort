@@ -1,0 +1,37 @@
+startinsert
+set backspace=indent,eol,start
+set nocompatible
+set mouse=a
+set encoding=utf-8
+set tabstop=4
+
+nnoremap <C-S> :w<CR>
+inoremap <C-S> <ESC>:w<CR>a
+vnoremap <C-S> <ESC>:w<CR>gv
+
+nnoremap <C-A> ggVG$
+inoremap <C-A> <ESC>ggVG$
+vnoremap <C-A> <ESC>ggVG$
+
+nnoremap <C-C> "+yy
+inoremap <C-C> <ESC>"+yya
+vnoremap <C-C> "+ygv
+
+nnoremap <C-X> "+dd
+inoremap <C-X> <ESC>"+dda
+vnoremap <C-X> "+d
+
+nnoremap <C-V> "+p
+inoremap <C-V> <ESC>"+pa
+vnoremap <C-V> "+p
+
+nnoremap <C-Z> u
+inoremap <C-Z> <ESC>ui
+vnoremap <C-Z> <ESC>u
+
+nnoremap <C-Y> <C-R>
+inoremap <C-Y> <ESC><C-R>i
+vnoremap <C-Y> <ESC><C-R>
+
+vnoremap <backspace> d
+vnoremap <delete> d
